@@ -1,0 +1,41 @@
+@import "./src/styles/index";
+
+.navbar {
+  @include w100;
+  @include flex-row;
+  @include p16;
+  box-sizing: border-box;
+  height: 4rem;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+
+  &__title {
+    @include fw600;
+    @include flex-row;
+    align-items: center;
+    font-size: 18px;
+
+    &__text {
+      padding-right: 0.15rem;
+    }
+
+    &__section {
+      @include flex-row;
+      background-color: black;
+      color: white;
+      align-items: center;
+      padding: 0.05rem 0.30rem 0.05rem 0;
+      border-radius: 0 12px 12px 0;
+    }
+  }
+
+  &__menu {
+
+
+    &__icon {
+      width: 36px;
+      height: 36px;
+    }
+  }
+}

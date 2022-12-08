@@ -1,0 +1,59 @@
+@import "./src/styles/index";
+
+.card {
+
+  @include w100;
+  @include flex-column;
+  @include brAll;
+  box-sizing: border-box;
+  box-shadow: 4px 10px 15px -3px rgba(0,0,0,0.1);
+  position: relative;
+
+  &__image {
+    @include w100;
+    @include brTop;
+    object-fit: cover;
+    height: 225px;
+  }
+
+  &__badge {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    color: white;
+    background-color: #000;
+    border-radius: 12px;
+    box-sizing: border-box;
+
+    &__text {
+      padding: 0.10rem 0.50rem 0.10rem 0.50rem;
+      display: flex;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__information {
+    @include p16;
+
+    &__line {
+      @include flex-row;
+      justify-content: space-between;
+    }
+
+    &__price {
+      color: #00a50e;
+      @include fw600;
+    }
+
+    &__title {
+      @include fw500;
+    }
+
+    &__subtitle {
+      color: gray;
+      font-size: 0.85rem;
+    }
+  }
+}

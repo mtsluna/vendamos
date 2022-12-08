@@ -1,0 +1,34 @@
+@import "src/styles/index";
+
+.catalog {
+  box-sizing: border-box;
+  padding: 1rem;
+  display: grid;
+  grid-gap: 1rem;
+
+  &__publications {
+    @include w100;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 1rem;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 600px) {
+  .catalog__publications { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1000px) {
+  .catalog__publications { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (min-width: 1400px) {
+  .catalog__publications { grid-template-columns: repeat(4, 1fr); }
+}
+
+@media (min-width: 1800px) {
+  .catalog__publications { grid-template-columns: repeat(5, 1fr); }
+}

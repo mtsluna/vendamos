@@ -1,0 +1,33 @@
+@import "./src/styles/index";
+
+.filter {
+  display: grid;
+  grid-gap: 1rem;
+
+  &__box {
+    @include w100;
+    box-sizing: border-box;
+    background-color: #F4F4F4;
+    height: 50px;
+    border-radius: 12px;
+  }
+
+  &__footer {
+    @include flex-row;
+    justify-content: space-between;
+    font-size: 0.85rem;
+
+    &__results {
+      @include flex-row;
+      align-items: center;
+      color: gray;
+    }
+
+    &__order {
+      @include flex-row;
+      align-items: center;
+    }
+
+  }
+
+}
