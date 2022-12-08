@@ -12,7 +12,7 @@ const root = ReactDOM.createRoot(
 const router = createBrowserRouter([
     {
         index: true,
-        path: "/autos",
+        path: "/",
         element: <Catalog/>
     }
 ])
