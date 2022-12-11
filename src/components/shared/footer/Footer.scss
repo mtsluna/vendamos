@@ -1,0 +1,7 @@
+@import "./src/styles/index";
+
+.footer {
+  background-color: black;
+  @include w100;
+  height: 250px;
+}

@@ -4,6 +4,7 @@ import {ICard} from "../../components/card/ICard";
 import "./Catalog.scss";
 import {Navbar} from "../../components/shared/navbar/Navbar";
 import {Filter} from "../../components/shared/filter/Filter";
+import {Paginate} from "../../components/shared/paginate/Paginate";
 
 export const Catalog = () => {
 
@@ -29,14 +30,8 @@ export const Catalog = () => {
                 <Card location={card.location} model={card.model} make={card.make} year={card.year} price={card.price} km={card.km} version={card.version} currency={card.currency} id={card.id} image={card.image}/>
                 <Card location={card.location} model={card.model} make={card.make} year={card.year} price={card.price} km={card.km} version={card.version} currency={card.currency} id={card.id} image={card.image}/>
                 <Card location={card.location} model={card.model} make={card.make} year={card.year} price={card.price} km={card.km} version={card.version} currency={card.currency} id={card.id} image={card.image}/>
-                <Card location={card.location} model={card.model} make={card.make} year={card.year} price={card.price} km={card.km} version={card.version} currency={card.currency} id={card.id} image={card.image}/>
-                <Card location={card.location} model={card.model} make={card.make} year={card.year} price={card.price} km={card.km} version={card.version} currency={card.currency} id={card.id} image={card.image}/>
-                <Card location={card.location} model={card.model} make={card.make} year={card.year} price={card.price} km={card.km} version={card.version} currency={card.currency} id={card.id} image={card.image}/>
-                <Card location={card.location} model={card.model} make={card.make} year={card.year} price={card.price} km={card.km} version={card.version} currency={card.currency} id={card.id} image={card.image}/>
-                <Card location={card.location} model={card.model} make={card.make} year={card.year} price={card.price} km={card.km} version={card.version} currency={card.currency} id={card.id} image={card.image}/>
-                <Card location={card.location} model={card.model} make={card.make} year={card.year} price={card.price} km={card.km} version={card.version} currency={card.currency} id={card.id} image={card.image}/>
-                <Card location={card.location} model={card.model} make={card.make} year={card.year} price={card.price} km={card.km} version={card.version} currency={card.currency} id={card.id} image={card.image}/>
             </div>
+            <Paginate/>
         </div>
     </div>
 }

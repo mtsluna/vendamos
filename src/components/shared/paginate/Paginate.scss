@@ -1,0 +1,24 @@
+@import "./src/styles/index";
+
+.paginate {
+  @include w100;
+  @include flex-row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+
+  &__button {
+    @include flex-row;
+    padding: 0.25rem;
+    border-radius: 12px;
+    background-color: black;
+    color: white;
+  }
+
+  &__counter {
+    @include flex-row;
+    gap: 0.25rem;
+
+  }
+}

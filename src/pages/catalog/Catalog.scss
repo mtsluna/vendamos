@@ -2,9 +2,10 @@
 
 .catalog {
   box-sizing: border-box;
-  padding: 1rem;
+  padding: 0 1rem 1rem 1rem;
   display: grid;
-  grid-gap: 1rem;
+
+  grid-gap: 0.5rem;
 
   &__publications {
     @include w100;
